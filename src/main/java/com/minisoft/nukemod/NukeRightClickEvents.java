@@ -30,7 +30,7 @@ public class NukeRightClickEvents {
         Player player = event.getEntity();
 
         // 检查右键的方块是否是核弹方块
-        if (level.getBlockState(event.getPos()).is(NukeMod.NUKE_BLOCK.get())) {
+        if (level.getBlockState(event.getPos()).is(NukeMod.NUKE_BLOCK.get())) { //TODO: 检查26.1的兼容性
             // 新增：检查玩家是否潜行（按下Shift）
             if (!player.isShiftKeyDown()) {
                 player.displayClientMessage(
